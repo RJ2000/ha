@@ -1,0 +1,78 @@
+@import 'global.scss';
+
+.ReservationList {
+    display:block;
+    width: 26%;
+    margin: -5% 3% 0% 10%;
+    background: $form-background;  
+    border-radius: $small-border-radius;  
+    .ReservationListContent {
+        margin-left: 0%;
+        font-size:18px;
+        color: $blue-light;
+        font-weight: 700;
+        color: $blue-light;
+        padding: 10px 10px 10px 15px;
+    }
+    .ReservationResult {
+        color: $font-dark;
+        max-height:300px;
+        overflow:auto;
+        .ReservationItem {
+            display:flex;
+            border-top: 2px dashed #eee;
+            margin-top: 10px;
+            padding-top: 10px;
+            margin-right: 10px;
+            .Guest {
+                flex:1;
+                
+                font-size:16px;
+                
+                .FullName {
+                    font-style:italic;
+                }
+                .Hotel {
+                    span {
+                        color:$font-dark;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            .Arrival {
+                flex:0;
+            }
+            .Departure {
+                flex: 0;
+                margin-left:10%;
+            }
+            .Date {
+                margin-top:0px;
+                font-weight: 700;
+                display: flex;
+                font-size: 0.85rem;
+                justify-content: center;
+                align-items: center;
+                color: $font-dark;
+                .Day {
+                  color: $blue-dark;
+                  font-size: 3rem;
+                }
+                .Container {
+                  display: flex;
+                  justify-content: center;
+                  flex-direction: column;
+                }
+                .Month {
+                  font-weight: 700;
+                }
+                .Week {
+                  font-weight: 400;
+                }
+              }
+        }
+    }
+    .EmptyReservationList {
+        color: $font-gray;
+    }
+}

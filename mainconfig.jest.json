@@ -1,0 +1,7 @@
+{
+  "extends": "./mainconfig",
+  "compilerOptions": {
+    "module": "commonjs",
+    "jsx": "react"
+  }
+}

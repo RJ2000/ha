@@ -1,0 +1,62 @@
+@import 'global.scss';
+
+.MakeReservation {
+  background: $form-background;
+  padding: 15px;
+  margin: 15px;
+  border-radius: $small-border-radius;
+  min-width: 340px;
+  max-width: 440px;
+  margin-right: 10%;
+  margin-top: 30px;
+
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 10px;
+    .date-picker {
+      margin: 0px 8px 15px 10px;
+    }
+  
+    label {
+      font-size: 18px !important;
+      font-weight: 700;
+      margin: auto;
+      margin-bottom: 15px;
+      font-family: Roboto, sans-serif;
+      color:$blue-light;
+    }
+  
+    input {
+      font-size: 0.99rem;
+      color: $font-gray;
+      min-width: 200px;
+    }
+  
+    button {
+      margin: 0px 8px 15px 10px !important;
+      font-weight: 700;
+      border: 0;
+      border-radius: 2px;
+      color: #FFF;
+      display: inline-block;
+      font-size: 1.95em !important;
+      letter-spacing: 2px;
+      padding: 9px 18px;
+      text-align: center;
+      text-decoration: none;
+      align-self: flex-end;
+      cursor: pointer;
+      margin-top: 6px;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .MakeReservation {
+    flex-direction: row;
+  }
+}

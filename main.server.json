@@ -1,0 +1,28 @@
+{
+  "extends": "./mainconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "module": "commonjs",
+    "target": "es2017",
+    "lib": ["es2017"],
+    "outDir": ".next",
+    "paths": {
+      "*": [
+        "./node_modules/*",
+        "./entities/*"
+      ]
+    }
+  },
+  "include": [
+    "./**/*",
+    "./entities/*",
+    "./static/*"
+  ],
+  "exclude": [
+    ".next",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
+}
